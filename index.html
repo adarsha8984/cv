@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsha Mallik - IoT & Robotics Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid #3498db;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .left-column, .right-column {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #3498db;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #3498db;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .project-placeholder {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .project-placeholder:hover {
+            transform: translateX(5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: #2c3e50;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ADARSHA MALLIK</h1>
+        <p>IoT & Robotics Engineer</p>
+        <div class="contact-info">
+            <span>+91 8984504572</span>
+            <span>mallikadarsha5@gmail.com</span>
+            <span>Pipili, Puri</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-grid">
+            <div class="left-column">
+                <section class="education">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <h3>Diploma in E&TC</h3>
+                        <p>Government Polytechnic Bhubaneswar</p>
+                        <p>08/2022 - Present</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Matriculation</h3>
+                        <p>Nahalapada High School</p>
+                        <p>01/2018 - 05/2022</p>
+                    </div>
+                </section>
+
+                <section class="languages">
+                    <h2>Languages</h2>
+                    <p>English (Advanced)<br>
+                    Hindi (Advanced)<br>
+                    Odia (Native)</p>
+                </section>
+
+                <section class="strengths">
+                    <h2>Strengths</h2>
+                    <ul>
+                        <li>Strong Practical Skills</li>
+                        <li>Quick Learner</li>
+                        <li>Technology Enthusiast</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section class="skills">
+                    <h2>Technical Skills</h2>
+                    <div class="skill-tags">
+                        <span class="skill-tag">IoT</span>
+                        <span class="skill-tag">Robotics</span>
+                        <span class="skill-tag">ESP32</span>
+                        <span class="skill-tag">ESP8266</span>
+                        <span class="skill-tag">Arduino IDE</span>
+                        <span class="skill-tag">STM32</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Drones</span>
+                        <span class="skill-tag">Embedded OS</span>
+                        <span class="skill-tag">ESP32-CAM</span>
+                        <span class="skill-tag">AI/ML</span>
+                        <span class="skill-tag">PCB Design</span>
+                        <span class="skill-tag">Microsoft Office</span>
+                    </div>
+                </section>
+
+                <section class="achievements">
+                    <h2>Key Achievements</h2>
+                    <div class="project-placeholder">
+                        <h3>Robotics Certifications</h3>
+                        <p>Multiple certifications in robotics and AI systems</p>
+                    </div>
+                    <div class="project-placeholder">
+                        <h3>IoT Projects</h3>
+                        <p>Developed various IoT solutions using ESP32/8266</p>
+                    </div>
+                </section>
+
+                <section class="interests">
+                    <h2>Interests</h2>
+                    <ul>
+                        <li>Emerging Technologies</li>
+                        <li>Electronics Prototyping</li>
+                        <li>Embedded Systems Development</li>
+                        <li>AI Integration</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© <span id="year"></span> Adarsha Mallik | Portfolio</p>
+    </footer>
+
+    <script>
+        // Auto-update year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Add hover effect to project cards
+        document.querySelectorAll('.project-placeholder').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.backgroundColor = '#e9ecef';
+            });
+            card.addEventListener('mouseout', () => {
+                card.style.backgroundColor = '#f8f9fa';
+            });
+        });
+
+        // Console greeting
+        console.log('Welcome to Adarsha Mallik%c\'s Portfolio!', 'color: #3498db; font-weight: bold;');
+    </script>
+</body>
+</html>
